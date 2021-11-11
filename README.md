@@ -1,6 +1,7 @@
 # Salad Maker: How To Start Making CSGO Skins in 2021
 
 _Note: Feel free to send me PR requests to improve this guide_
+
 _Note: If you want to see more of my work, check out [my portfolio](https://www.coroflot.com/qutepixels)_
 
 In July 2021 Valve announced a million dollar [Dreams & Nightmares](https://counter-strike.net/dreams) weapon skin competition and I was instantly hooked. Making skins for [CSGO](https://en.wikipedia.org/wiki/Counter-Strike:_Global_Offensive) sounded like a really fun challenge and the loot was good. I knew absolutely nothing about creating 3D textures so as I went along, I documented every step of my journey. Here's a guide I wish existed when I started. And here's [my first skin](https://steamcommunity.com/sharedfiles/filedetails/?id=2633279524), the **Salad Maker**:
@@ -116,7 +117,7 @@ That gave me a quick list of **10 useful observations on competition** (note: I 
     - 22 were **(2) not fitting the salience level defined in the competition**. Usually those submissions were too colorful or brash whereas most skins needed for the competition were of lower salience levels
     - 9 were **(3) obscene in a way that even if you make a clean version of it, the core design idea would be lost**
     - 5 were skins for a **(4) weapon not used in the contest**
-    - 9 were simply **(5) dublicates or color variations of some entries I already had in my hand-picked list of 154 skins**
+    - 9 were simply **(5) duplicates or color variations of some entries I already had in my hand-picked list of 154 skins**
     - 3 looked cool in a thumbnail but **(6) completely unprofessional when looking at them closely**
 - **(7) Some weapons were seriously underrepresented**. Weapons like SCAR-20, G3SG1 or MP5-SD had very few (1-2) real competitors - compared to around 5-20 great entries for each of the other guns in the competition
 - **(8) Very few skins played with the weapon-specific details or dynamics** (the way that gun actually sounds, its reload process, parts that actually move while shooting etc.). Most were simply an art piece "drawn" into the skin.
@@ -447,7 +448,7 @@ The goal of this step is to **transform all of the layers of your 2D sketch to t
 
 First, take each of the color layers you had, merge them onto your 3D model - go to its UV and name that layer properly. Then create a new layer in the UV, `CTRL + S` (that will make sure that whatever you draw on the 3D model will actually land onto the new layer) and repeat the process with all the layers. One thing you will notice quickly is that **a lot of UV spots seem to be unpainted**. Go through each layer and fix that. That is quite tedious at first but after doing it for 30-60 minutes you kind of "zone in" and it becomes this monotonous, almost zen-like process.
 
-_Note: Maybe it's just me but **playing lo-fi playlists playing in the background** made the whole process so much more enjoyable for me**_
+_Note: Maybe it's just me but **listening to lo-fi playlists playing in the background** made the whole process so much more enjoyable for me_
 
 Now that you have all of your layers there, look at your model from different sides and think about what could be those small gun-specific details you could add to the design. I came up with 4:
 
