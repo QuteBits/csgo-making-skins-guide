@@ -55,7 +55,7 @@ My biggest problem with learning how to create skins was figuring out and organi
 Here's the list of main design guidelines I gathered from all the sources I've read and watched:
 
 - what **TO CONSIDER**:
-    - for starters **use just Custom Paint or Gunsmith** finishes for your skins (imagine it like this: custom paint = "the way you see your design on the screen", gunsmith = "the way you would see your design printed on metal"). All the mumbo-jumbo with other finish types will potentially confuse you immensely plus nobody wants it (plus some other finishes have different definitions of alpha maps or even the whole way the skin is made, so IMHO don't bother)
+    - for starters **use just Custom Paint or Gunsmith** finishes for your skins (imagine it like this: custom paint = "make the weapon look close to how you see your design in Photoshop", gunsmith = "the way you would see your design printed on metal"). All the mumbo-jumbo with other finish types will potentially confuse you immensely plus nobody wants it (plus some other finishes have different definitions of alpha maps or even the whole way the skin is made, so IMHO don't bother)
         - **"Solid Color" or "Anodized" finished types are officially adviced against**
         - **Patina finish has a different type of alpha channel** compared to relatively s1mple ones used for Custom Paint or Gunsmith
         - A **normal map can give the weapon finish an appearance of depth or bumps** without adding more polygons through the use of lighting. Normal maps **can be applied to Patina, Custom Paint, and Gunsmith** finish styles only.
@@ -241,7 +241,7 @@ Let's use both of these techniques now. Let's search for some cool pattern image
 
 ![](img/pattern.png)
 
-Now switch to the 3D view in Photoshop (where you see your 3D model) and paste that image on top of it _as a new layer_. Then merge it down. I did it several times over the model in different places until I got a nice look. Then I drew a small smiley directly over the model using a small brush:
+Now switch to the 3D view in Photoshop (where you see your 3D model) and paste that image on top of it _as a new layer_. Then merge it down. I did it several times over the model in different places until I got a nice look (don't forget to rotate the camera from the "right side" to "left side" and cover the other side with the texture as well). Then I drew a small smiley directly over the model using a small brush:
 
 ![](img/hello-1.jpg)
 
@@ -279,7 +279,7 @@ Now if you look at your UV it probably looks like a mess and super pixelated. Th
         - `phongintensity`: 5
         - `pearlescent`: 0
 
-Also **always play with how your skin reflects light** (`phongexponent` / `phongintensity` / `pearlescent`). Various skin makers suggest one or good values but I have a feeling there are lots more combinations that work for different designs. For our s1mple skin I settled down on `150 / 100 / 2.0`. If you do the same you should see something like this:
+Also **always play with how your skin reflects light** (`phongexponent` / `phongintensity` / `pearlescent`). Various skin makers suggest one or two good value sets but I strongly feel there are a lot more combinations that work well for different designs. For our s1mple skin I settled down on `150 / 100 / 2.0`. If you do the same you should see something like this:
 
 ![](img/params-hello.png)
 
@@ -384,7 +384,7 @@ As a bonus you could also add **animated GIFs** to show your skin in action (rel
 
 ![](img/submission.png)
 
-_Note: **Add the type of the gun into the title of your submission** (so don't name it just "Soul Crusher", name it something like "Bizon ‖ Soul Crusher". Because here's the thing: when you search for, say P2000 skins, using the Workshop page, you can do that by selecting P2000 in the filter. But if you actually put P2000 into the search bar it will search for it only within skin titles ignoring the type of the gun. Because some people do search for "a skin of weapon type P2000" using a search bar nowadays (looking at you, Valve)._
+_Note: **Add the type of the gun into the title of your submission** (so don't just name it "Soul Crusher", name it something like "Bizon ‖ Soul Crusher". Because here's the thing: when you search for (example) P2000 skins on the Workshop page, of course you can use the search filter and select weapon type - P2000. But if you actually type P2000 into the search bar, it will show you different results because this time it will search for P2000 within skin titles ignoring the type of the gun. And some people do search for P2000 skins by typing "P2000" into the search bar nowadays (looking at you, Valve)._
 
 As for the marketing, I didn't try it yet but it seems that just submitting a skin is not enough. Also, as Valve puts it [[1](https://store.steampowered.com/news/app/730/view/2913221511623966531)]: "**Don't forget about popularity.** Getting your finish upvoted and noticed is a great way to demonstrate desirability and collect feedback that will help you iterate on it. **One of the factors we use to gauge community interest is the popularity of a submission**". At the bare minimum to get some traction and views, **post your entry on Reddit to get some feedback**. Because it's A - s1mple, there are only 3 really active CSGO subreddits to post to (look them up in the REFERENCES chapter below). And B - according to some skin makers, Valve favors the new artists so that part might be crucial.
 
@@ -432,7 +432,9 @@ So I made that sketch super-transparent, printed it on paper several times and d
 
 ![](img/draft-2.jpg)
 
-Then I photographed my results, put into Photoshop, tweaked levels (`CTRL + L`) so that the paper would actually look white, paste that layer (blending type: `Multiply`) over the 3D model and start creating color layers. **Naming your layers is important** as you will easily get to 10-20 layers in the end and when redrawing the texture again and again, finding the right layer will be crucial. Also **try to keep each layer single-colored** because later on when you will test your skin in the game, you will most probably need to correct some colors so that it fits with the game looks. And nothing would be worse if you have a layer with 5 different colors and you only need to fix one of them... Here is what my end result was looking like for this stage:
+Then I photographed my results, put into Photoshop, tweaked levels (`CTRL + L`) so that the paper would actually look white, paste that layer (blending type: `Multiply`) over the 3D model and start creating color layers.
+
+**Naming your layers is important** as you will easily get to 10-20 layers in the end and when redrawing the texture again and again, finding the right layer will be crucial. Also **try to keep each layer single-colored** because later on when you will test your skin in the game, you will most probably need to correct some colors so that it fits with the game looks. And nothing would be worse if you have a layer with 5 different colors and you only need to fix one of them... Here is what my end result was looking like for this stage:
 
 ![](img/draft-3.jpg)
 
@@ -444,7 +446,7 @@ Ok now that we have something we like, let's make a real UV out of it.
 
 **This is the part where you capture "the soul of the skin"**. Steps before this one will be invisible in the final submission. And steps after this one are just about polishing the texture but won't change your design. It has to look good by the end of this stage. If it doesn't, polishing won't save it.
 
-The goal of this step is to **transform all of the layers of your 2D sketch to the UV**, **make sure all the UV spots are painted**, figure out all the **gun-specific skin features** and **make sure that the UV is rendered properly in the Workshop and in-game**
+The goal of this step is to **transform all of the layers of your 2D sketch to the UV**, **make sure all the UV spots are painted over**, figure out all the **gun-specific skin features** and **make sure that the UV is rendered properly in the Workshop and in-game**
 
 First, take each of the color layers you had, merge them onto your 3D model - go to its UV and name that layer properly. Then create a new layer in the UV, `CTRL + S` (that will make sure that whatever you draw on the 3D model will actually land onto the new layer) and repeat the process with all the layers. One thing you will notice quickly is that **a lot of UV spots seem to be unpainted**. Go through each layer and fix that. That is quite tedious at first but after doing it for 30-60 minutes you kind of "zone in" and it becomes this monotonous, almost zen-like process.
 
